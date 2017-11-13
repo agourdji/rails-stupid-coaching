@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Stupid Coaching - Answer</title>
+  </head>
+  <body>
+    <h2>Your Question: <%= @questions %></h2>
+    <h2>Coach's Reply:
+    <%= @questions.include?("training") ? "Let's get training!" : "Silly question, get back to work!" %>
+    </h2>
+    <%= link_to "Ask a new question", "/ask" %>
+  </body>
+</html>
